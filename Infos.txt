@@ -1,0 +1,1 @@
+Navbar contains about, Resume, previous works, contact
