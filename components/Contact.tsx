@@ -26,7 +26,7 @@ const Contact = () => {
                 </div>
                 <div className='input-label textarea'>
                     <label htmlFor="message">Message</label>
-                    <textarea className='email' placeholder='Hello Taki🙋‍♂️...' />
+                    <textarea className='email' placeholder='Hello Taki...' />
                 </div>
                 <button className='send-msg'>Send Message</button>
             </form>
