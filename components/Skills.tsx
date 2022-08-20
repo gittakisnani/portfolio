@@ -1,5 +1,5 @@
 import JS from '../public/assets/JS.png';
-import TS from '../public/ASSETS/TS.png'
+import TS from '../public/assets/TS.png'
 import Tailwind from '../public/assets/Tailwind.png'
 import React from '../public/assets/React-icon.svg.png'
 import Next from '../public/assets/next.png'
