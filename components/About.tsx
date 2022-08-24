@@ -23,12 +23,12 @@ const About = () => {
                 <ul className='techs'>
                     <li className=''><p>Javascript (ES6+)</p></li>
                     <li className=''><p>React Js (Next Js)</p></li>
-                    <li className=''><p>Typescript</p></li>
-                    <li className=''><p>Tailwind</p></li>
+                    <li className=''><p>Typescript (TS)</p></li>
+                    <li className=''><p>Tailwindcss</p></li>
                     <li className=''><p>Node JS (Express)</p></li>
                 </ul>
                 <p className='desc desc-about'>If You need a Developer for your project, Than i may be the Developer you{"'"}re looking for!
-                <a href='#contact' className='cta'>. If so let{"'"}s make something Special!</a></p>
+                <a href='mailto:takisnbusiness@gmail.com' className='cta'>. If so let{"'"}s make something Special!</a></p>
             </div>
         </div>
     </div>

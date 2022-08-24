@@ -13,7 +13,6 @@ const Socials = () => {
         <a href='https://www.linkedin.com/in/taki-snani-1ba6ba236/' title='Taki Snani | LinkedIn'>
             <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <div className='line'></div>
     </div>
   )
 }

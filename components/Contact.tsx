@@ -9,7 +9,7 @@ const Contact = () => {
         <div className='text'>
            <div className='text-wrapper'>
            <span className='emoji'>
-            <Image src={ContactImage} alt='Contact me' width={400} height={400} />
+            <Image src={ContactImage} alt='Contact me' width={450} height={450} />
            </span>
             <p className='text-desc'>I am interested in <span className='interest'>freelance or remote jobs opportunities</span>, but if you have any suggestion, question or request don't hesitate to Contact me </p>
            </div>
