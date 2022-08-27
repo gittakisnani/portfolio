@@ -2,8 +2,8 @@ import React from 'react'
 import Work from './Work'
 import Dark from '../public/assets/Projects/Dark.jpeg'
 import Light from '../public/assets/Projects/Light.png'
-import GroceriesApp from '../public/assets/Projects/Ecommerce/GroceriesAppVisible.png'
-import GroceriesAppProduct from '../public/assets/Projects/Ecommerce/GroceriesAppProduct.png'
+// import GroceriesApp from '../public/assets/Projects/Ecommerce/GroceriesAppVisible.png'
+// import GroceriesAppProduct from '../public/assets/Projects/Ecommerce/GroceriesAppProduct.png'
 import QuizApp from '../public/assets/Projects/Quiz/QuizApp.png'
 import Categories from '../public/assets/Projects/Quiz/Categories.png'
 import Fahrenheit from '../public/assets/Projects/Weather/Fahrenheit.png'
@@ -15,7 +15,7 @@ const Works = () => {
         <div className='works-wrapper'>
             <Work 
             index={1}
-            src={[GroceriesApp, GroceriesAppProduct]}
+            src={[Dark, Light]}
             workName='Groceries-App' 
             feature='Shopping cart, Find Liked Items, Products with discount and end time, Newsletter registration with custom discount.'
             techs={['React Js (Next Js)', 'Tailwindcss', 'MongoDB', 'Express']}
