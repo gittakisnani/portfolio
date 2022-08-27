@@ -11,7 +11,9 @@ import Degrees from '../public/assets/Projects/Weather/Degrees.png'
 const Works = () => {
   return (
     <div className='works' id='works'>
-        <h3 className='heading'><span className='hash'>#</span>PROJECTS I{'\''}VE BUILT</h3>
+        <h3 className='heading'>
+          <span className='hash'>#</span>PROJECTS I{'\''}VE BUILT
+          </h3>
         <div className='works-wrapper'>
             <Work 
             index={1}
