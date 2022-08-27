@@ -10,7 +10,7 @@ type WorkProps = {
     techs: string[]
     demoLink?: string
     index: number
-    src: StaticImageData | string
+    src: (StaticImageData | string)[]
 }
 
 const Work = ({ workName, workDesc, feature, role, techs, demoLink, index, src }: WorkProps) => {
@@ -36,14 +36,15 @@ const Work = ({ workName, workDesc, feature, role, techs, demoLink, index, src }
             </ul>
 
             <div className='buttons-wrapper'>
-                <a className='demo' href={demoLink || '/'}>Visit Website</a>
-                <Link href={`/${workName}`}><a className='case-study'>Case study</a></Link>
+                <a className='demo cta-button' href={demoLink || '/'} target="_blank"  rel="noreferrer noopener">Visit Website</a>
+                <a href={demoLink || '/'}  className='case-study'>Case study  (progress)</a>
             </div>
         </div>
         </div>
         <div className='work-image'>
-            <Image src={src} alt={workName} />
-            <Image src={src} alt={workName} />
+            {src.map((source, index) => (
+                <Image key={index} src={source} alt={workName} />
+            ))}
         </div>
     </div>
   )

@@ -1,7 +1,9 @@
-import React from 'react'
+import { useState} from 'react'
 import Image from 'next/image'
 import ContactImage from '../public/assets/Contact.png'
 const Contact = () => {
+    const [body, setBody] = useState('')
+    const [subject, setSubject] = useState('')
   return (
     <div className='contact' id='contact'>
         <h3 className='heading'><span className='hash'>#</span>CONTACT</h3>
@@ -21,14 +23,29 @@ const Contact = () => {
                     <input autoCapitalize='true' required className='fullname' type="text" />
                 </div>
                 <div className='input-label'>
-                    <label htmlFor="fullname">Email</label>
-                    <input required className='email' type="email" />
+                    <label htmlFor="fullname">Subject</label>
+                    <input 
+                    required 
+                    className='text' 
+                    type="text" 
+                    value={subject}
+                    onChange={e => setSubject(e.target.value)}
+                    />
                 </div>
                 <div className='input-label textarea'>
                     <label htmlFor="message">Message</label>
-                    <textarea className='email' placeholder='Hello Taki...' />
+                    <textarea 
+                    className='email' 
+                    placeholder='Hello Taki...'
+                    title='Message body' 
+                    value={body}
+                    onChange={e => setBody(e.target.value)}
+                    />
                 </div>
-                <button className='send-msg'>Send Message</button>
+                <a 
+                className='send-msg'
+                href={`mailto:takisnbusiness@gmail.com?subject=${encodeURI(subject)}&body=${encodeURI(body)}`}
+                >Send Message</a>
             </form>
         </div>
         </div>

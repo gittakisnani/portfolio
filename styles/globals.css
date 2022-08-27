@@ -368,6 +368,22 @@ li {
   transition: all 250ms;
 }
 
+.cta-button {
+  animation: demoLink 800ms ease-in infinite;
+}
+
+@keyframes demoLink {
+  0% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .case-study {
   background-color: rgba(238, 238, 238, .1);
   color: white;
@@ -508,6 +524,7 @@ textarea {
   width: fit-content;
   background-color: #023e8a;
   transition: all 250ms ease-out;
+  cursor: pointer;
 }
 
 .send-msg:hover,
