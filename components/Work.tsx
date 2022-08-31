@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import { StaticImageData } from 'next/image'
-type WorkProps = {
+
+export type WorkProps = {
     workName: string
     workDesc: string
     feature: string
