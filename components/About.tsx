@@ -6,6 +6,7 @@ const About = () => {
     const { width } = useWindowSize()
   return (
     <div className='about' id='about'>
+        <div className="container">
         { width! > 768 && 
         <div className='image-wrapper'>
             <Image src={AboutImage} alt='Develop. Preview. Ship' height={500} width={400} />
@@ -30,6 +31,7 @@ const About = () => {
                 <p className='desc desc-about'>If You need a Developer for your project, Than i may be the Developer you{"'"}re looking for!
                 <a href='mailto:takisnbusiness@gmail.com' className='cta'>. If so let{"'"}s make something Special!</a></p>
             </div>
+        </div>
         </div>
     </div>
   )

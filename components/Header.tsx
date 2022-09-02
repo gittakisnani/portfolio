@@ -38,10 +38,10 @@ const Header = () => {
 
   return (
     <header className='header'>
+      <div className="container">
       <span 
        style={{width: spanWidth}}
        className='scroll-feature'></span>
-        <Container className='header-container'>
           <Logo />
           {navBar && <NavBar openNav={openNav} handleNavBar={handleNavBar} />}
           {width! <= 768 && !navBar &&
@@ -54,7 +54,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faTimes} size='2x' />
           </button>
           }
-        </Container>
+        </div>
     </header>
   )
 }

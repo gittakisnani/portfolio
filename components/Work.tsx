@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import { StaticImageData } from 'next/image'
-
+import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
 export type WorkProps = {
     workName: string
     workDesc: string
@@ -11,9 +13,10 @@ export type WorkProps = {
     demoLink?: string
     index: number
     src: (StaticImageData | string)[]
+    srcCode?: string
 }
 
-const Work = ({ workName, workDesc, feature, role, techs, demoLink, index, src }: WorkProps) => {
+const Work = ({ workName, workDesc, feature, role, techs, demoLink, index, src, srcCode }: WorkProps) => {
   return (
     <div className='work'>
         <div className='work-desc'>
@@ -36,14 +39,16 @@ const Work = ({ workName, workDesc, feature, role, techs, demoLink, index, src }
             </ul>
 
             <div className='buttons-wrapper'>
-                <a className='demo cta-button' href={demoLink || '/'} target="_blank"  rel="noreferrer noopener">Visit Website</a>
-                <a href={demoLink || '/'}  className='case-study'>Case study  (progress)</a>
+                <Link href={demoLink || '/'}><a className='demo cta-button' target='_blank' rel="noreferrer noopener">Visit Website</a></Link>
+                <a className='case-study' href={srcCode!} target="_blank" rel="noreferrer">Source code <FontAwesomeIcon icon={faCode} /></a>
             </div>
         </div>
         </div>
         <div className='work-image'>
             {src.map((source, index) => (
-                <Image key={index} src={source} alt={workName} />
+                <Link key={index} href={demoLink || ''}>
+                    <Image  src={source} alt={workName} />
+                </Link>
             ))}
         </div>
     </div>

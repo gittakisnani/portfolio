@@ -6,6 +6,7 @@ const Contact = () => {
     const [subject, setSubject] = useState('')
   return (
     <div className='contact' id='contact'>
+        <div className="container">
         <h3 className='heading'><span className='hash'>#</span>CONTACT</h3>
         <div className="contact-wrapper">
         <div className='text'>
@@ -47,6 +48,7 @@ const Contact = () => {
                 href={`mailto:takisnbusiness@gmail.com?subject=${encodeURI(subject)}&body=${encodeURI(body)}`}
                 >Send Message</a>
             </form>
+        </div>
         </div>
         </div>
     </div>

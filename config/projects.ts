@@ -25,7 +25,8 @@ const projects: projectsType = [
         feature: 'Shopping cart, Find Liked Items, Products with discount and end time, Newsletter registration with custom discount.',
         role: 'Helping customers find & buy their favorite groceries',
         techs: ['React Js (Next Js)', 'Tailwindcss', 'MongoDB', 'Express'] ,
-        demoLink: 'https://groceries-app-be.vercel.app/'
+        demoLink: 'https://groceries-app-be.vercel.app/',
+        srcCode: 'https://github.com/gittakisnani/groceries-app-be'
     },
     {
         index: 2,
@@ -36,6 +37,7 @@ const projects: projectsType = [
         role: 'Helping readers and authors read, write, Books in various categories',
         techs: ['React Js (Next Js)', 'Tailwindcss'],
         demoLink: 'https://ebook-app.vercel.app/',
+        srcCode: 'https://github.com/gittakisnani/ebook-app'
     },
     {
         index: 3,
@@ -45,7 +47,8 @@ const projects: projectsType = [
         feature: 'Multiple quizzes in different Categories, Get your score and share it to tweeter',
         role: 'Test your knowledge in various categories with simple questions',
         techs: ['React js'],
-        demoLink: 'https://gittakisnani.github.io/quiz-app/'
+        demoLink: 'https://gittakisnani.github.io/quiz-app/',
+        srcCode: 'https://github.com/gittakisnani/quiz-app'
     },
     {
         index: 4,
@@ -54,8 +57,9 @@ const projects: projectsType = [
         workDesc: 'A Vanilla JS app made using openWeatherAPI, Allow you to get your home (saved) location\'s weather conditions: today\'s temperature in both Fahrenheit and Degree Celsius, min and max temp, wind speed in both mph and m/s, humidity and current status (cloudy, sun...), Also you get next six days min and max temperatures in both mph and m/s. You can change metrics, refresh the current conditions, get your location (if you allow), and save your home location.',
         feature: 'Get and save your location, get today forecast conditions: Temperature, wind & humidity, and the next 6 days temperature.',
         role: 'Helping people get their locations weather conditions.',
-        techs: ['Javascript', 'SASS (SCSS)'],
-        demoLink: 'https://weather-forecast-gules-zeta.vercel.app/'
+        techs: ['Javascript', 'SASS (SCSS)', 'HTML'],
+        demoLink: 'https://weather-forecast-gules-zeta.vercel.app/',
+        srcCode: 'https://github.com/gittakisnani/Weather-Forecast'
     },
     {
         index: 5,
@@ -65,7 +69,8 @@ const projects: projectsType = [
         feature: 'Book Foods with booking table, Also Booking for events.',
         role: 'Helping customers buying Foods for events',
         techs: ['HTML', 'CSS', 'Javascript'],
-        demoLink: 'https://cuisine-website.vercel.app/'
+        demoLink: 'https://cuisine-website.vercel.app/',
+        srcCode: 'https://github.com/gittakisnani/cuisine-website'
     },
     {
         index: 6,
@@ -75,7 +80,8 @@ const projects: projectsType = [
         feature: 'Multiple sections, great animations',
         role: 'Multiple sections, great animations',
         techs: ['HTML', 'CSS'],
-        demoLink: 'https://personal-template-three.vercel.app/'
+        demoLink: 'https://personal-template-three.vercel.app/',
+        srcCode: 'https://github.com/gittakisnani/personal-template'
     }
 ]
 

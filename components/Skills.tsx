@@ -12,6 +12,7 @@ import Image from 'next/image';
 const Skills = () => {
   return (
     <div className='skills' id='skills'>
+        <div className="container">
         <h3 className='heading'><span className='hash'>#</span>MY_SKILLS</h3>
 
         <div className='skills-wrapper'>
@@ -49,8 +50,9 @@ const Skills = () => {
             </div>
             <div className='skill'>
                 <Image src={MangoDB} alt='Mango DB' height='150' width='150' />
-                <p className='skill-name'>Mango DB</p>
+                <p className='skill-name'>MangoDB</p>
             </div>
+        </div>
         </div>
     </div>
   )

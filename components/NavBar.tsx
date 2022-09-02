@@ -34,11 +34,6 @@ const NavBar = ({ openNav, handleNavBar }: NavBarProps) => {
                     <li className='navbar-li'><span className='hash'>#</span>Contact</li>
                 </a>
             </Link>
-            <Link href='/resume'>
-                <a onClick={handleNav} className=''>
-                    <li className='navbar-li special'>Get Resume!</li>
-                </a>
-            </Link>
         </ul>
     </nav>
   )
