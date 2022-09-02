@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import Logo from './Logo'
-import Container from './Container'
 import NavBar from './NavBar'
 import useWindowSize from '../hooks/useWindowSize'
 import { WindowSize } from '../hooks/useWindowSize'
