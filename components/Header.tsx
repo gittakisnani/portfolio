@@ -5,18 +5,18 @@ import useWindowSize from '../hooks/useWindowSize'
 import { WindowSize } from '../hooks/useWindowSize'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { useRouter } from 'next/router'
 
 
 const Header = () => {
   const { width }: WindowSize = useWindowSize();
-  const scrollRef = useRef<null | HTMLSpanElement>(null!)
-
+  const headerRef = useRef<null | HTMLHeadElement>(null!)
+  useEffect(() => {
+    window.scrollY >= 68 ? headerRef.current?.classList.add('header-bg') : headerRef.current?.classList.remove('header-bg')
+  }, [typeof window !== "undefined" && window.scrollY])
 
   const [navBar, setNavBar] = useState(false);
   const [openNav, setOpenNav] = useState(false);
   const [spanWidth, setSpanWidth] = useState('0%')
-  // const router = useRouter()
 
   useEffect(() => setNavBar(width! > 768 ? true : false ),[width])
 
@@ -36,7 +36,7 @@ const Header = () => {
 
 
   return (
-    <header className='header'>
+    <header ref={headerRef} className='header'>
       <div className="container">
       <span 
        style={{width: spanWidth}}

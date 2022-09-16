@@ -1,6 +1,9 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import Link from 'next/link'
 import useWindowSize from '../hooks/useWindowSize'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 type NavBarProps = {
     openNav: boolean
     handleNavBar: () => void
@@ -34,6 +37,9 @@ const NavBar = ({ openNav, handleNavBar }: NavBarProps) => {
                     <li className='navbar-li'><span className='hash'>#</span>Contact</li>
                 </a>
             </Link>
+            <a target='_blank' rel='noreferrer noopener'  href='https://github.com/gittakisnani' className='github' title='GitHub'>
+                <FontAwesomeIcon icon={faGithub} />
+            </a>
         </ul>
     </nav>
   )

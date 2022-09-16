@@ -2,15 +2,18 @@ import React from 'react'
 import Image from 'next/image'
 import AboutImage from '../public/assets/About.jpg'
 import useWindowSize from '../hooks/useWindowSize'
+import { Fade } from 'react-awesome-reveal'
 const About = () => {
     const { width } = useWindowSize()
   return (
     <div className='about' id='about'>
         <div className="container">
         { width! > 768 && 
-        <div className='image-wrapper'>
-            <Image src={AboutImage} alt='Develop. Preview. Ship' height={500} width={400} />
-        </div>
+            <div className='image-wrapper'>
+                <Fade direction='left' triggerOnce>
+                    <Image src={AboutImage} alt='Develop. Preview. Ship' height={500} width={400} />
+                </Fade>
+            </div>
         }
         <div className='about-wrapper'>
             <h4 className='heading'><span className='hash'>#</span>ABOUT_ME</h4>
