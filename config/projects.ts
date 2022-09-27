@@ -143,7 +143,7 @@ const projects: projectsType = [
         feature: 'Reveal animations, Intersection observer that changes navbar links color, pagination swiper',
         role: 'Landing page to represent your website',
         techs: ['React js', 'Next js', 'Tailwindcss', 'Typescript'],
-        demoLink: 'next-ts-landing-page.vercel.app/',
+        demoLink: 'https://next-ts-landing-page.vercel.app/',
         srcCode: 'https://github.com/gittakisnani/next-ts-landing-page',
         type: 'Front-end'
     },
