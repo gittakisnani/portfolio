@@ -23,7 +23,9 @@ const Works = () => {
           <Filters filters={filters} handleFilters={handleFilters} text='Full-stack' id='fs' />
         </div>
         <div className="works-wrapper">
-          {projects.filter(pr => filters.indexOf(pr.type) !== -1).map(project => (
+          {projects.filter(pr => filters.indexOf(pr.type) !== -1).map((project, index) => {
+            project.index = index + 1
+            return (
             <Fade key={project.index} triggerOnce >
               <Work 
                 index={project.index}
@@ -37,7 +39,7 @@ const Works = () => {
                 srcCode={project.srcCode}
               />
             </Fade>
-          ))}
+            )})}
         </div>
         </div>
     </div>

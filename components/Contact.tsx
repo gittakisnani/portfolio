@@ -21,14 +21,15 @@ const Contact = () => {
             <form className='form'>
                 <div className='input-label'>
                     <label htmlFor="fullname">Full name</label>
-                    <input autoCapitalize='true' required className='fullname' type="text" />
+                    <input autoCapitalize='true' autoComplete='off' id='fullname' required className='fullname' type="text" />
                 </div>
                 <div className='input-label'>
-                    <label htmlFor="fullname">Subject</label>
+                    <label htmlFor="subject">Subject</label>
                     <input 
                     required 
-                    className='text' 
+                    className='subject' 
                     type="text" 
+                    id='subject'
                     value={subject}
                     onChange={e => setSubject(e.target.value)}
                     />
@@ -36,6 +37,7 @@ const Contact = () => {
                 <div className='input-label textarea'>
                     <label htmlFor="message">Message</label>
                     <textarea 
+                    id='message'
                     className='email' 
                     placeholder='Hello Taki...'
                     title='Message body' 
@@ -45,6 +47,7 @@ const Contact = () => {
                 </div>
                 <a 
                 className='send-msg'
+                aria-label='Send message'
                 href={`mailto:takisnbusiness@gmail.com?subject=${encodeURI(subject)}&body=${encodeURI(body)}`}
                 >Send Message</a>
             </form>

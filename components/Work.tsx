@@ -11,7 +11,7 @@ export type WorkProps = {
     role: string
     techs: string[]
     demoLink?: string
-    index: number
+    index?: number
     src: (StaticImageData | string)[]
     srcCode?: string
 }
@@ -21,7 +21,7 @@ const Work = ({ workName, workDesc, feature, role, techs, demoLink, index, src, 
     <div className='work'>
         <div className='work-desc'>
         <h3 className='project-name'>
-            <span>0{index}.</span>
+            <span>{index! >= 10 ? "" : 0}{index}.</span>
             <span className='work-name'>{workName}</span>
         </h3>
 

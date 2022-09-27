@@ -325,6 +325,7 @@ li {
 
 .filters {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
   margin: 1rem 0;
@@ -401,13 +402,19 @@ li {
 }
 
 .desc-wrapper-work {
-  padding: 0 1rem 0 2rem;
+  padding: 0 1.5rem;
   border-left: 1px solid #eee;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   width: 95%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .desc-wrapper-work {
+    padding: 0 1rem;
+  }
 }
 
 .feature {
