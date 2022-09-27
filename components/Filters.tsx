@@ -29,3 +29,5 @@ const Filters = ({ id, text, filters, handleFilters} : Filter ) => {
     </label>
   )
 }
+
+export default Filters
