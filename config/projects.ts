@@ -11,9 +11,10 @@ import Personal2 from '../public/assets/Projects/Personal/Personal2.png'
 import Cuisine1 from '../public/assets/Projects/ShaifsCuisine/Cuisine1.png'
 import Cuisine2 from '../public/assets/Projects/ShaifsCuisine/Cuisine2.png'
 import { WorkProps } from '../components/Work'
+import { FiltersType } from '../components/Works'
 
 
-type projectsType = WorkProps[] 
+type projectsType = (WorkProps & { type: FiltersType })[] 
 
 
 const projects: projectsType = [
@@ -26,7 +27,8 @@ const projects: projectsType = [
         role: 'Helping customers find & buy their favorite groceries',
         techs: ['React Js (Next Js)', 'Tailwindcss', 'MongoDB', 'Express'] ,
         demoLink: 'https://groceries-app-be.vercel.app/',
-        srcCode: 'https://github.com/gittakisnani/groceries-app-be'
+        srcCode: 'https://github.com/gittakisnani/groceries-app-be',
+        type: 'Full-stack'
     },
     {
         index: 2,
@@ -37,7 +39,8 @@ const projects: projectsType = [
         role: 'Helping readers and authors read, write, Books in various categories',
         techs: ['React Js (Next Js)', 'Tailwindcss'],
         demoLink: 'https://ebook-app.vercel.app/',
-        srcCode: 'https://github.com/gittakisnani/ebook-app'
+        srcCode: 'https://github.com/gittakisnani/ebook-app',
+        type: 'Front-end'
     },
     {
         index: 3,
@@ -48,7 +51,8 @@ const projects: projectsType = [
         role: 'Test your knowledge in various categories with simple questions',
         techs: ['React js'],
         demoLink: 'https://gittakisnani.github.io/quiz-app/',
-        srcCode: 'https://github.com/gittakisnani/quiz-app'
+        srcCode: 'https://github.com/gittakisnani/quiz-app',
+        type: 'Front-end'
     },
     {
         index: 4,
@@ -59,7 +63,8 @@ const projects: projectsType = [
         role: 'Helping people get their locations weather conditions.',
         techs: ['Javascript', 'SASS (SCSS)', 'HTML'],
         demoLink: 'https://weather-forecast-gules-zeta.vercel.app/',
-        srcCode: 'https://github.com/gittakisnani/Weather-Forecast'
+        srcCode: 'https://github.com/gittakisnani/Weather-Forecast',
+        type: 'Front-end'
     },
     {
         index: 5,
@@ -70,7 +75,8 @@ const projects: projectsType = [
         role: 'Helping customers buying Foods for events',
         techs: ['HTML', 'CSS', 'Javascript'],
         demoLink: 'https://cuisine-website.vercel.app/',
-        srcCode: 'https://github.com/gittakisnani/cuisine-website'
+        srcCode: 'https://github.com/gittakisnani/cuisine-website',
+        type: 'Front-end'
     },
     {
         index: 6,
@@ -81,7 +87,8 @@ const projects: projectsType = [
         role: 'Multiple sections, great animations',
         techs: ['HTML', 'CSS'],
         demoLink: 'https://personal-template-three.vercel.app/',
-        srcCode: 'https://github.com/gittakisnani/personal-template'
+        srcCode: 'https://github.com/gittakisnani/personal-template',
+        type: 'Front-end'
     }
 ]
 

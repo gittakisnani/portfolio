@@ -19,7 +19,7 @@ const About = () => {
             <h4 className='heading'><span className='hash'>#</span>ABOUT_ME</h4>
             <div className='desc-wrapper'>
                 <p className='desc desc-about'>
-                Hello and Welcome! I am Taki Snani, a Med School Student & a Front-End Developer located in Algeria,
+                Hello and Welcome! I am Taki Snani, Med School Student & MERN Full-stack Developer located in Algeria,
                 I am interested about Web development, I started my journey with FE Development back in October 2021, July 2022 i started Learning Back-End Development using NodeJS
 
                 Here are few Technologies i have been working with recently:
