@@ -740,3 +740,32 @@ textarea {
   width: 0;
   height: 0;
 }
+
+.notfound {
+  height: 90vh;
+  
+}
+
+.notfound .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.notfound h2 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.notfound_link {
+  padding: .5rem 1.5rem;
+  background-color: #0b032d;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 1rem;
+  display: block;
+}
