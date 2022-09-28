@@ -6,7 +6,7 @@ import Filters from './Filters'
 
 export type FiltersType = ('Back-end' | 'Full-stack' | 'Front-end')
 const Works = () => {
-  const [filters, setFilters] = useState<FiltersType[]>(['Front-end'])
+  const [filters, setFilters] = useState<FiltersType[]>(['Front-end', 'Back-end', 'Full-stack'])
   const handleFilters = (filter:FiltersType) => {
     setFilters(filters.includes(filter) ? filters.filter(fl => fl !== filter) : [...filters, filter])
   }
