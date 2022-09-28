@@ -6,6 +6,7 @@ import Next from '../public/assets/next.png'
 import Node from '../public/assets/NodeJS.png'
 import Sass from '../public/assets/SCSS.png'
 import Express from '../public/assets/Express.png'
+import GitHub from '../public/assets/GitHub.png'
 import MangoDB from '../public/assets/MangoDB.png'
 import Image from 'next/image';
 import { Fade } from 'react-awesome-reveal'
@@ -50,6 +51,12 @@ const Skills = () => {
             <div className='skill'>
                 <Image src={Tailwind} alt='Tailwindcss' height='150' width='150' />
                 <p className='skill-name'>Tailwindcss</p>
+            </div>
+            </Fade>
+            <Fade direction='up' triggerOnce>
+            <div className='skill'>
+                <Image src={GitHub} alt='GitHub' height='150' width='150' />
+                <p className='skill-name'>GitHub</p>
             </div>
             </Fade>
             <Fade direction='up' triggerOnce>

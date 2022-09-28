@@ -37,6 +37,7 @@ const Works = () => {
                 workDesc={project.workDesc}
                 demoLink={project.demoLink || '/'}
                 srcCode={project.srcCode}
+                contribute={project.contribute}
               />
             </Fade>
             )})}

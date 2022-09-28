@@ -36,7 +36,8 @@ const projects: projectsType = [
         techs: ['React Js (Next Js)', 'Tailwindcss', 'MongoDB', 'Express'] ,
         demoLink: 'https://groceries-app-be.vercel.app/',
         srcCode: 'https://github.com/gittakisnani/groceries-app-be',
-        type: 'Full-stack'
+        type: 'Full-stack',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fgroceries-app-be'
     },
     {
         src: [Clothes1, Clothes2],
@@ -47,7 +48,8 @@ const projects: projectsType = [
         techs: ['React js', 'Typescript', 'Tailwindcss', 'React Router'],
         demoLink: 'https://clothes-e-commerce.vercel.app/',
         srcCode: 'https://github.com/gittakisnani/clothes-e-commerce-client',
-        type: 'Front-end'
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fclothes-e-commerce-client'
     },
     {
         src: [Images1, Images2, Images3],
@@ -58,7 +60,8 @@ const projects: projectsType = [
         techs: ['React js', 'Next js', 'Typescript', 'Tailwindcss'],
         demoLink: 'https://zingy-yeot-c28d58.netlify.app/',
         srcCode: 'https://github.com/gittakisnani/image-gallery',
-        type: 'Front-end'
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fimage-gallery'
     },
     {
         src: [Dark, Light],
@@ -69,7 +72,8 @@ const projects: projectsType = [
         techs: ['React Js (Next Js)', 'Tailwindcss'],
         demoLink: 'https://ebook-app.vercel.app/',
         srcCode: 'https://github.com/gittakisnani/ebook-app',
-        type: 'Front-end'
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Febook-app'
     },
     {
         src: [QuizApp, Categories],
@@ -80,7 +84,8 @@ const projects: projectsType = [
         techs: ['React js'],
         demoLink: 'https://gittakisnani.github.io/quiz-app/',
         srcCode: 'https://github.com/gittakisnani/quiz-app',
-        type: 'Front-end'
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fquiz-app'
     },
     {
         src: [Fahrenheit, Degrees],
@@ -91,7 +96,8 @@ const projects: projectsType = [
         techs: ['Javascript', 'SASS (SCSS)', 'HTML'],
         demoLink: 'https://weather-forecast-gules-zeta.vercel.app/',
         srcCode: 'https://github.com/gittakisnani/Weather-Forecast',
-        type: 'Front-end'
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2FWeather-Forecast'
     },
     {
         src: [Author1, Author2],
@@ -102,7 +108,8 @@ const projects: projectsType = [
         techs: ['React js', 'Next js', 'Tailwindcss', 'Typescript'],
         demoLink: 'https://author-landing-page.vercel.app/',
         srcCode: 'https://github.com/gittakisnani/author-landing-page',
-        type: 'Front-end'
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fauthor-landing-page'
     },
     {
         src: [Imagine1, Imagine2],
@@ -113,7 +120,8 @@ const projects: projectsType = [
         techs: ['React js', 'Next js', 'Tailwindcss', 'Typescript'],
         demoLink: 'https://next-ts-landing-page.vercel.app/',
         srcCode: 'https://github.com/gittakisnani/next-ts-landing-page',
-        type: 'Front-end'
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fnext-ts-landing-page'
     },
     {
         src: [Cuisine1, Cuisine2],
@@ -124,7 +132,8 @@ const projects: projectsType = [
         techs: ['HTML', 'CSS', 'Javascript'],
         demoLink: 'https://cuisine-website.vercel.app/',
         srcCode: 'https://github.com/gittakisnani/cuisine-website',
-        type: 'Front-end'
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fcuisine-website'
     },
     {
         src: [Personal1, Personal2],
@@ -135,7 +144,8 @@ const projects: projectsType = [
         techs: ['HTML', 'CSS'],
         demoLink: 'https://personal-template-three.vercel.app/',
         srcCode: 'https://github.com/gittakisnani/personal-template',
-        type: 'Front-end'
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fpersonal-template'
     },
     
     
