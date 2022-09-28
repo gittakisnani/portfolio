@@ -28,11 +28,11 @@ const Work = ({ workName, workDesc, feature, role, techs, demoLink, index, src, 
         </h3>
 
         <div className='desc-wrapper-work'>
-            <h4 className='feature'>{feature}</h4>
+            <h4 className='feature'><u>Features:</u> <br /> {feature}</h4>
 
-            <h5 className='desc'>{workDesc}</h5>
+            <h5 className='desc'><u>Description:</u> <br /> {workDesc}</h5>
 
-            <p className='role'>{role}</p>
+            <p className='role'><u>Role:</u> {role}</p>
 
             <ul className='techs-wrapper'>
                 {techs.map((tech, index) => (
