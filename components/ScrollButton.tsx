@@ -1,6 +1,8 @@
 import { useRef, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
+
+
 const ScrollButton = () => {
     const scrollBtnRef = useRef<null | HTMLButtonElement>(null!);
 
@@ -17,7 +19,7 @@ const ScrollButton = () => {
 
         document.addEventListener("scroll", handleScroll);
         // remove event on unmount to prevent a memory leak
-        () => document.removeEventListener("scroll", handleScroll);
+        return () => document.removeEventListener("scroll", handleScroll);
     }, []);
 
     
