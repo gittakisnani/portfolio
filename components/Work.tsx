@@ -2,9 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import { StaticImageData } from 'next/image'
 import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { BsGithub } from 'react-icons/bs';
+import { TbCode } from 'react-icons/tb'
 export type WorkProps = {
     workName: string
     workDesc: string
@@ -42,8 +41,8 @@ const Work = ({ workName, workDesc, feature, role, techs, demoLink, index, src, 
 
             <div className='buttons-wrapper'>
                 <Link href={demoLink || '/'}><a className='demo cta-button' target='_blank' rel="noreferrer noopener">Visit Website</a></Link>
-                <Link href={srcCode!} ><a target="_blank" rel="noreferrer" className='case-study'>Source code <FontAwesomeIcon icon={faCode} /></a></Link>
-                <Link href={contribute}><a className='contribute'><FontAwesomeIcon icon={faGithub} />Contribute</a></Link>
+                <Link href={srcCode!} ><a target="_blank" rel="noreferrer" className='case-study'>Source code <TbCode size='25px' /></a></Link>
+                <Link href={contribute}><a className='contribute'><BsGithub />Contribute</a></Link>
             </div>
         </div>
         </div>

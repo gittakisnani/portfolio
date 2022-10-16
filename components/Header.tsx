@@ -3,8 +3,8 @@ import Logo from './Logo'
 import NavBar from './NavBar'
 import useWindowSize from '../hooks/useWindowSize'
 import { WindowSize } from '../hooks/useWindowSize'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { HiMenu } from 'react-icons/hi'
+import { IoMdClose } from 'react-icons/io'
 
 
 const Header = () => {
@@ -45,12 +45,12 @@ const Header = () => {
           {navBar && <NavBar openNav={openNav} handleNavBar={handleNavBar} />}
           {width! <= 768 && !navBar &&
           <button onClick={handleNavBar} className='menu-bars'>
-            <FontAwesomeIcon icon={faBars} size='2x' />
+            <HiMenu size='30px' />
           </button>
           }
           {width! <= 768 && navBar &&
           <button onClick={handleNavBar} className='menu-bars'>
-            <FontAwesomeIcon icon={faTimes} size='2x' />
+            <IoMdClose size='30px' />
           </button>
           }
         </div>

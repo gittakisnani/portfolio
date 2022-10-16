@@ -90,11 +90,12 @@ li {
   font-weight: 500;
 }
 
-.navbar-li:not(.special) {
+.navbar-li {
   position: relative;
+  font-weight: 600;
 } 
 
-.navbar-li:not(.special)::after {
+.navbar-li::after {
   position: absolute;
   left: .5rem;
   bottom: 0;
@@ -105,7 +106,7 @@ li {
   content: '';
 }
 
-.navbar-li:not(.special):hover::after {
+.navbar-li:hover::after {
   width: 40%;
 }
 
@@ -482,6 +483,9 @@ li {
   background-color: rgba(238, 238, 238, .1);
   color: white;
   padding: .5rem 1rem;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
 }
 
 .demo:hover {
@@ -742,6 +746,7 @@ textarea {
   z-index: 100;
   transition:  all 250ms ease-in-out;
   overflow: hidden;
+  font-size: 1.5rem;
 }
 
 .github {

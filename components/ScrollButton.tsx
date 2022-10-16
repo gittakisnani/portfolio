@@ -1,6 +1,5 @@
 import { useRef, useEffect } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
+import { BiArrowToTop } from 'react-icons/bi'
 
 
 const ScrollButton = () => {
@@ -14,7 +13,7 @@ const ScrollButton = () => {
     useEffect(() => {
         const handleScroll = () => {
          const { pageYOffset, scrollY } = window;
-            pageYOffset > 200 || scrollY > 200 ? scrollBtnRef.current?.classList.remove('hide') : scrollBtnRef.current?.classList.add('hide')
+            pageYOffset >= 300 || scrollY > 300 ? scrollBtnRef.current?.classList.remove('hide') : scrollBtnRef.current?.classList.add('hide')
         };
 
         document.addEventListener("scroll", handleScroll);
@@ -24,8 +23,8 @@ const ScrollButton = () => {
 
     
   return (
-    <button title='Scroll to top' ref={scrollBtnRef} onClick={handleScrollToTop} className='scroll'>
-        <FontAwesomeIcon icon={faAngleUp} />
+    <button title='Scroll to top' ref={scrollBtnRef} onClick={handleScrollToTop} className='scroll hide'>
+        <BiArrowToTop />
     </button>
   )
 }
