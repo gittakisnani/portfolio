@@ -25,10 +25,10 @@ const Header = () => {
     setTimeout(() => setOpenNav(!openNav), 50)
   }
 
-  if(typeof window !== 'undefined') {
+  if(typeof window !== 'undefined' && typeof document !== 'undefined') {
     const handleScroll = () => {
-      const percent = window.scrollY / document.body.clientHeight || window.scrollY / window.innerHeight
-      setSpanWidth(percent * 100 + '%')
+      const percent = window.scrollY / (document.body.getBoundingClientRect().height - window.innerHeight)
+      setSpanWidth(Math.ceil(percent * 100) + '%')
     }
   
     window.addEventListener('scroll', handleScroll)

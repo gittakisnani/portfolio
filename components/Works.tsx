@@ -22,7 +22,7 @@ const Works = () => {
           <Filters filters={filters} handleFilters={handleFilters} text='Back-end' id='be'/>
           <Filters filters={filters} handleFilters={handleFilters} text='Full-stack' id='fs' />
         </div>
-        <div className="works-wrapper">
+        {filters.length > 0 && <div className="works-wrapper">
           {projects.filter(pr => filters.indexOf(pr.type) !== -1).map((project, index) => {
             project.index = index + 1
             return (
@@ -41,7 +41,8 @@ const Works = () => {
               />
             </Fade>
             )})}
-        </div>
+        </div>}
+        {!filters.length && <div className='noprojects'>No Projects found</div>}
         </div>
     </div>
   )

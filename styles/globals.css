@@ -324,6 +324,18 @@ li {
   padding: 1rem 1.2rem;
 }
 
+.noprojects {
+  width: 100%;
+  color: #ffffff;
+  font-size: 3.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .noprojects {
+    font-size: 2rem;
+  }
+}
+
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -726,9 +738,12 @@ textarea {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 2px;
+  height: 3px;
   background-color: #0b032d;
   content: '';
+  border-radius: 5px;
+  box-shadow: 0 0 1px 1px #0b032d62;
+  transition: all 250ms ease;
 }
 
 
