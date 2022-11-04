@@ -22,7 +22,7 @@ const Header = () => {
 
   const handleNavBar = () => {
     setNavBar(!navBar)
-    setTimeout(() => setOpenNav(!openNav), 50)
+    setTimeout(() => setOpenNav(!openNav), 100)
   }
 
   if(typeof window !== 'undefined' && typeof document !== 'undefined') {
