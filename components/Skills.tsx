@@ -8,8 +8,11 @@ import Sass from '../public/assets/SCSS.png'
 import Express from '../public/assets/Express.png'
 import GitHub from '../public/assets/GitHub.png'
 import MangoDB from '../public/assets/MangoDB.png'
+import Redux from '../public/assets/Redux.png'
+import Materialui from '../public/assets/Materialui.png'
 import Image from 'next/image';
 import { Fade } from 'react-awesome-reveal'
+
 const Skills = () => {
   return (
     <div className='skills' id='skills'>
@@ -50,7 +53,7 @@ const Skills = () => {
             <Fade direction='up' triggerOnce>
             <div className='skill'>
                 <Image src={Tailwind} alt='Tailwindcss' height='150' width='150' />
-                <p className='skill-name'>Tailwindcss</p>
+                <p className='skill-name'>TailwindCSS</p>
             </div>
             </Fade>
             <Fade direction='up' triggerOnce>
@@ -75,6 +78,18 @@ const Skills = () => {
             <div className='skill'>
                 <Image src={MangoDB} alt='Mango DB' height='150' width='150' />
                 <p className='skill-name'>MangoDB</p>
+            </div>
+            </Fade>
+            <Fade direction='up' triggerOnce>
+            <div className='skill'>
+                <Image src={Redux} alt='Mango DB' height='150' width='150' />
+                <p className='skill-name'>Redux toolkit and RTK Query</p>
+            </div>
+            </Fade>
+            <Fade direction='up' triggerOnce>
+            <div className='skill'>
+                <Image src={Materialui} alt='Mango DB' height='150' width='150' />
+                <p className='skill-name'>Material UI</p>
             </div>
             </Fade>
         </div>
