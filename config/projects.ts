@@ -19,6 +19,23 @@ import Author1 from '../public/assets/Projects/Author/Author1.png'
 import Author2 from '../public/assets/Projects/Author/Author2.png'
 import Imagine1 from '../public/assets/Projects/Imagine/Imagine1.png'
 import Imagine2 from '../public/assets/Projects/Imagine/Imagine2.png'
+import Herc from '../public/assets/Projects/Herc.png'
+import Checkout from '../public/assets/Projects/Checkout.png'
+import HomeD from '../public/assets/Projects/HomeD.png'
+import MyAccountD from '../public/assets/Projects/MyAccountD.png'
+import PaymentProcessD from '../public/assets/Projects/PaymentProcessD.png'
+import OrdersD from '../public/assets/Projects/OrdersD.png'
+import ProductD from '../public/assets/Projects/ProductD.png'
+import ProductsD from '../public/assets/Projects/ProductsD.png'
+import ProductHerc from '../public/assets/Projects/ProductHerc.png'
+import ReactToNext from '../public/assets/Projects/ReactToNext.png'
+import Shop from '../public/assets/Projects/Shop.png'
+import WishlistD from '../public/assets/Projects/WishlistD.png'
+import MyCart from '../public/assets/Projects/MyCart.png'
+import WishList from '../public/assets/Projects/Herc.png'
+import Orders from '../public/assets/Projects/Orders.png'
+import Products from '../public/assets/Projects/Products.png'
+import MyAccount from '../public/assets/Projects/MyAccount.png'
 import { WorkProps } from '../components/Work'
 import { FiltersType } from '../components/Works'
 
@@ -42,13 +59,73 @@ const projects: projectsType = [
     {
         src: [Clothes1, Clothes2],
         workName: 'Clothes e-commerce website',
-        workDesc: 'Man clothes e-commerce website built using Reactjs, React Router Typescript, Tailwindcss. Currently this project is only Front-end but (I will add the backend soon), This project has multiple pages, Page to add product for sellers, and other page to edit already added products, login and registration page, in multiple cases user will forget their passwords, so I added Forgot password page that has email input to sent resetCode, also has resetCode password to enter the sent code, and create new password code that requires two inputs: Password & confirmPassword. I have also provided this project with an awesome 404 page, Products page and single product page.',
+        workDesc: 'Man clothes e-commerce website built using Reactjs, React Router Typescript, Tailwindcss. Currently this project is only Front-end but, This project has multiple pages, Page to add product for sellers, and other page to edit already added products, login and registration page, in multiple cases user will forget their passwords, so I added Forgot password page that has email input to sent resetCode, also has resetCode password to enter the sent code, and create new password code that requires two inputs: Password & confirmPassword. I have also provided this project with an awesome 404 page, Products page and single product page.',
         feature: 'Reveal animations, Modal routing, Search bar with filters, Fully responsive',
         role: 'You can use this website to: browse, buy & sell products',
         techs: ['React js', 'Typescript', 'Tailwindcss', 'React Router', 'Node js', 'Express js', 'MongoDB'],
         demoLink: 'https://clothes-e-commerce.vercel.app/',
         srcCode: 'https://github.com/gittakisnani/clothes-e-commerce-client',
         type: 'Full-stack',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fclothes-e-commerce-client'
+    },
+    {
+        src: [HomeD, PaymentProcessD, ProductD, ProductsD, OrdersD, MyAccountD, Checkout, WishlistD],
+        workName: 'Custom client request: Dining Tables e-commerce website (desktop version)',
+        workDesc: 'Dining tables e-commerce website with multiple pages, Home page, checkout, payment-process, account, shopping list, cart, single product page, This project is only the front-end part of the website',
+        feature: 'Fully responsive, multiple sliders, filters, multiple modals',
+        role: 'Browsing, buying dining tables',
+        techs: ['React js', 'Next js', 'Tailwindcss'],
+        demoLink: 'https://adesmonda.vercel.app/',
+        srcCode: 'https://github.com/gittakisnani/adesmonda',
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fclothes-e-commerce-client'
+    },
+    {
+        src: [Products, Orders, MyCart, MyAccount],
+        workName: 'Custom client request: Dining Tables e-commerce website (mobile version)',
+        workDesc: 'Dining tables e-commerce website with multiple pages, Home page, checkout, payment-process, account, shopping list, cart, single product page, This project is only the front-end part of the website',
+        feature: 'Fully responsive, multiple sliders, filters, multiple modals',
+        role: 'Browsing, buying dining tables',
+        techs: ['React js', 'Next js', 'Tailwindcss'],
+        demoLink: 'https://adesmonda-mobile.vercel.app/',
+        srcCode: 'https://github.com/gittakisnani/adesmonda-mobile/',
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fclothes-e-commerce-client'
+    },
+    // {
+    //     src: [Clothes1, Clothes2],
+    //     workName: 'Custom client request: Dashboard (Figma design to Next js)',
+    //     workDesc: 'Custom client request: React js to Next js, multiple pages',
+    //     feature: 'Fully responsive',
+    //     role: '',
+    //     techs: ['React js', 'Next js', 'Tailwindcss', 'Styled Components'],
+    //     demoLink: 'https://dappdev-updated.vercel.app/',
+    //     srcCode: 'https://github.com/gittakisnani/dappdev-updated/',
+    //     type: 'Front-end',
+    //     contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fclothes-e-commerce-client'
+    // },
+    {
+        src: [ReactToNext],
+        workName: 'Custom client request: React js to Next js',
+        workDesc: 'Custom client request: React js to Next js, multiple pages',
+        feature: 'Fully responsive',
+        role: '',
+        techs: ['React js', 'Next js', 'bootstrap', 'scss'],
+        demoLink: 'https://react-to-next-updated.vercel.app/',
+        srcCode: 'https://github.com/gittakisnani/react-to-next-updated',
+        type: 'Front-end',
+        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fclothes-e-commerce-client'
+    },
+    {
+        src: [Herc, Shop, ProductHerc, WishList],
+        workName: 'Handmade ceramics e-commerce website',
+        workDesc: 'Man clothes e-commerce website built using Reactjs, React Router Typescript, Tailwindcss. Currently this project is only Front-end but (I will add the backend soon), This project has multiple pages, Page to add product for sellers, and other page to edit already added products, login and registration page, in multiple cases user will forget their passwords, so I added Forgot password page that has email input to sent resetCode, also has resetCode password to enter the sent code, and create new password code that requires two inputs: Password & confirmPassword. I have also provided this project with an awesome 404 page, Products page and single product page.',
+        feature: 'Multiple pages, Multiple filters: Price range slider, search keywords, sort methods, fully responsive',
+        role: 'You can use this website to: browse, buy handmade ceramics',
+        techs: ['React js', 'Tailwindcss', 'Next js'],
+        demoLink: 'https://herc.vercel.app/',
+        srcCode: 'https://github.com/gittakisnani/herc',
+        type: 'Front-end',
         contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fclothes-e-commerce-client'
     },
     {
