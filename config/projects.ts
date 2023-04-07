@@ -104,18 +104,18 @@ const projects: projectsType = [
     //     type: 'Front-end',
     //     contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fclothes-e-commerce-client'
     // },
-    {
-        src: [ReactToNext],
-        workName: 'Custom client request: React js to Next js',
-        workDesc: 'Custom client request: React js to Next js, multiple pages',
-        feature: 'Fully responsive',
-        role: '',
-        techs: ['React js', 'Next js', 'bootstrap', 'scss'],
-        demoLink: 'https://react-to-next-updated.vercel.app/',
-        srcCode: 'https://github.com/gittakisnani/react-to-next-updated',
-        type: 'Front-end',
-        contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fclothes-e-commerce-client'
-    },
+    // {
+    //     src: [ReactToNext],
+    //     workName: 'Custom client request: React js to Next js',
+    //     workDesc: 'Custom client request: React js to Next js, multiple pages',
+    //     feature: 'Fully responsive',
+    //     role: '',
+    //     techs: ['React js', 'Next js', 'bootstrap', 'scss'],
+    //     demoLink: 'https://react-to-next-updated.vercel.app/',
+    //     srcCode: 'https://github.com/gittakisnani/react-to-next-updated',
+    //     type: 'Front-end',
+    //     contribute: 'https://github.com/login?return_to=%2Fgittakisnani%2Fclothes-e-commerce-client'
+    // },
     {
         src: [Herc, Shop, ProductHerc, WishList],
         workName: 'Handmade ceramics e-commerce website',
